@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.header__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+.header__hamburger {
+  width: var(--size-2xl);
+  height: var(--size-2xl);
+  color: var(--clr-light);
+  display: block;
+  position: absolute;
+  top: var(--size-2xl);
+  right: var(--size-2xl);
+}
+
+.header__link {
+  display: block;
+  text-decoration: none;
+  color: var(--clr-slate600);
+  font-weight: 600;
+  font-size: var(--size-xs);
+}
+.header__line {
+  display: none;
+}
+.header__link:hover {
+  color: orange;
+}
+.header__sun {
+  color: var(--clr-slate600);
+  width: var(--size-base);
+  height: var(--size-base);
+}
+.header__resume {
+  text-decoration: none;
+  font-size: var(--size-xs);
+}
+
+/* xs */
+/* @media (min-width: 475px) {
+} */
+
+/* sm */
+/* @media (min-width: 640px) {
+} */
+
+/* md */
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    border: 1px solid red;
+    gap: 2em;
+  }
+  .header__link {
+    font-size: var(--size-xs);
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--clr-slate600);
+    transition: color 0.5s;
+    letter-spacing: -0.05em;
+  }
+  .header__link:hover {
+    color: orange;
+  }
+  .header__line {
+    border: 1px solid var(--clr-slate600);
+    height: 2rem;
+    display: inline-block;
+  }
+  .header__sun {
+    color: var(--clr-slate600);
+    width: var(--size-base);
+    height: var(--size-base);
+  }
+  .header__resume {
+    text-decoration: none;
+    font-size: var(--size-xs);
+  }
+  .header__hamburger {
+    display: none;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .header__link {
+    font-size: var(--size-sm);
+  }
+
+  .header__sun {
+    width: var(--size-2xl);
+    height: var(--size-2xl);
+  }
+  .header__resume {
+    font-size: var(--size-sm);
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {
+} */
+/*  */
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+} */
