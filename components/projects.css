@@ -129,6 +129,25 @@
     opacity: 0;
   }
 }
+
+.github {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  justify-content: space-evenly;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+.github__img {
+  height: 50px;
+  width: 50px;
+  filter: invert();
+}
+.github__link {
+  text-decoration: none;
+}
+
 /* filter */
 /* .project__img::after {
   content: "";
