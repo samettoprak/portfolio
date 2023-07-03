@@ -1,0 +1,180 @@
+.circle__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    at 70% 30%,
+    var(--clr-slate600) 0deg 15deg,
+    white 15deg 60deg,
+    var(--clr-slate600) 60deg 65deg,
+    white 65deg 80deg
+  );
+  -webkit-mask: radial-gradient(98px, #0000 100%, #fff);
+  animation: rotateCircle 60s infinite linear;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  inset: 0rem;
+  opacity: 0.2;
+
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    at 50% 30%,
+    var(--clr-slate600) 0deg 15deg,
+    white 15deg 60deg,
+    var(--clr-slate600) 60deg 65deg,
+    white 65deg 80deg
+  );
+  animation: rotateCircle 30s infinite linear;
+}
+
+.circle1 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+
+  background-image: repeating-conic-gradient(
+    at 20% 60%,
+    var(--clr-slate600) 0deg 15deg,
+    white 15deg 60deg,
+    var(--clr-slate600) 60deg 65deg,
+    white 65deg 80deg
+  );
+  -webkit-mask: radial-gradient(88px, #0000 100%, #fff);
+  animation: rotateCircle 55s infinite linear;
+}
+.circle1::after {
+  content: "";
+  background-image: repeating-conic-gradient(
+    at 60% 75%,
+    var(--clr-slate600) 0deg 15deg,
+    white 15deg 60deg,
+    var(--clr-slate600) 60deg 65deg,
+    white 65deg 80deg
+  );
+  inset: 0rem;
+  position: absolute;
+  opacity: 0.1;
+  animation: rotateCircle 40s infinite linear reverse;
+}
+.circle2 {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    var(--clr-slate600) 0deg 15deg,
+    white 15deg 60deg,
+    var(--clr-slate600) 60deg 65deg,
+    white 65deg 80deg,
+    var(--clr-slate600) 80deg 110deg,
+    white 110deg 120deg
+  );
+  -webkit-mask: radial-gradient(66px, #0000 100%, #fff);
+  animation: rotateCircle 40s infinite linear;
+}
+.circle2::after {
+  content: "";
+  inset: 0rem;
+  position: absolute;
+  background-image: repeating-conic-gradient(
+    at 20% 50%,
+    var(--clr-slate600) 0deg 45deg,
+    white 45deg 60deg,
+    var(--clr-slate600) 60deg 65deg,
+    white 65deg 80deg,
+    var(--clr-slate600) 80deg 110deg,
+    white 110deg 120deg
+  );
+  opacity: 0.1;
+  animation: rotateCircle 30s infinite ease;
+}
+
+.circle3 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    var(--clr-slate600) 0deg 45deg,
+    white 45deg 55deg,
+    var(--clr-slate600) 55deg 65deg,
+    white 65deg 80deg,
+    var(--clr-slate600) 80deg 110deg,
+    white 110deg 120deg
+  );
+  -webkit-mask: radial-gradient(54px, #0000 100%, #fff);
+  animation: rotateCircle 40s infinite linear reverse;
+}
+.circle3::after {
+  content: "";
+  position: absolute;
+  inset: 0rem;
+  background-image: repeating-conic-gradient(
+    at 40% 40%,
+    var(--clr-slate600) 0deg 45deg,
+    white 45deg 55deg,
+    var(--clr-slate600) 55deg 65deg,
+    white 65deg 80deg,
+    var(--clr-slate600) 80deg 110deg,
+    white 110deg 120deg
+  );
+  opacity: 0.2;
+  animation: rotateCircle 45s infinite ease-in-out;
+}
+
+.circle4 {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    at 40% 40%,
+    var(--clr-slate600) 0deg 30deg,
+    white 30deg 40deg,
+    var(--clr-slate600) 40deg 45deg,
+    white 45deg 60deg,
+    var(--clr-slate600) 60deg 70deg,
+    white 70deg 100deg
+  );
+  -webkit-mask: radial-gradient(44px, #0000 100%, #fff);
+  animation: rotateCircle 60s infinite linear;
+}
+
+.circle5 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(
+    at 40% 40%,
+    var(--clr-slate600) 0deg 30deg,
+    white 30deg 40deg,
+    var(--clr-slate600) 40deg 45deg,
+    white 45deg 60deg,
+    var(--clr-slate600) 60deg 70deg
+  );
+  -webkit-mask: radial-gradient(34px, #0000 100%, #fff);
+  animation: rotateCircle 30s infinite eas;
+  opacity: 0.1;
+}
+
+@keyframes rotateCircle {
+  from {
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

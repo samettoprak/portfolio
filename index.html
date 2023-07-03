@@ -16,12 +16,12 @@
     <header class="header container">
       <nav>
         <ul class="header__menu">
-          <li><a class="header__link" href="#">Home</a></li>
-          <li><a class="header__link" href="#">About</a></li>
-          <li><a class="header__link" href="#">Projects</a></li>
-          <li><a class="header__link" href="">Contact</a></li>
+          <li><a class="header__link" href="#home">Home</a></li>
+          <li><a class="header__link" href="#about">About</a></li>
+          <li><a class="header__link" href="#projects">Projects</a></li>
+          <li><a class="header__link" href="#contact">Contact</a></li>
           <li class="header__line"></li>
-          <li>
+          <li class="header__sun-li">
             <button class="header__sun">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@
       </nav>
     </header>
     <main>
-      <section class="hero container">
+      <section id="home" class="hero container">
         <img class="hero__img" src="/picture.png" alt="" />
         <h2 class="hero__hi">Hi! I'm Samet.</h2>
         <h1 class="hero__title">FRONT-END <br />WEB DEVELOPER</h1>
@@ -63,7 +63,7 @@
           vero earum iure.
         </p>
       </section>
-      <section class="about container section">
+      <section id="about" class="about container section">
         <div class="about__me">
           <h2 class="about__title">About Me</h2>
           <p class="about__desc">
@@ -97,10 +97,17 @@
             </ul>
           </div>
         </div>
-        <div class="circle__animation"></div>
+        <div class="circle__container">
+          <div class="circle"></div>
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+          <div class="circle3"></div>
+          <div class="circle4"></div>
+          <div class="circle5"></div>
+        </div>
       </section>
       <!-- projects section -->
-      <section class="projects section container">
+      <section id="projects" class="projects section container">
         <h1 class="projects__title">Projects</h1>
         <p class="projects__desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
@@ -108,7 +115,7 @@
           animi.
         </p>
 
-        <div class="project_container">
+        <div class="project_container section">
           <!-- proje1 -->
           <!-- <h1 class="project__title">Turkish Sign Language Translator</h1> -->
           <picture class="project__img project_img1">
@@ -128,7 +135,12 @@
             </div>
             <p class="project__process">Project Process</p>
             <div class="github">
-              <a class="github__link" href="">Code </a>
+              <a
+                class="github__link"
+                href="https://github.com/samettoprak/turkish-sign-language-AI"
+                target="_blank"
+                >Code
+              </a>
               <div class="github__img">
                 <img src="github.png" alt="" />
               </div>
@@ -151,40 +163,98 @@
               <div class="bar"></div>
             </div>
             <p class="project__process">Project Process</p>
+            <div class="github">
+              <a
+                class="github__link"
+                href="https://github.com/samettoprak/esinav"
+                target="_blank"
+                >Code
+              </a>
+              <div class="github__img">
+                <img src="github.png" alt="" />
+              </div>
+            </div>
           </div>
           <!-- proje3 -->
           <picture class="project__img project_img3">
             <img src="/netflix.gif" alt="" />
           </picture>
           <div class="project__about project_about3">
-            <h1 class="project__title">Turkish Sign Language Translator</h1>
+            <h1 class="project__title">Netflix Clone</h1>
             <p class="project__desc">
-              This app offers an interactive learning experience designed for
-              both students and teachers. <br />
-              Teachers can create quizzes, set deadlines, and track the grades
-              of all students. On the other hand, students can take exams
-              through this app and view their own grades.
+              Classic Netflix clone. <br />
+              Integrated authentication functionality with Firebase, allowing
+              users to create accounts, sign in, and personalize their content.
             </p>
+            <div class="bar__container">
+              <div class="bar"></div>
+            </div>
+            <p class="project__process">Project Process</p>
+            <div class="github">
+              <a
+                class="github__link"
+                href="https://github.com/samettoprak/netflix-clone"
+                target="_blank"
+                >Code
+              </a>
+              <div class="github__img">
+                <img src="github.png" alt="" />
+              </div>
+            </div>
           </div>
           <!-- proje4 -->
           <picture class="project__img project_img4">
-            <img src="/tsl1.png" alt="" />
+            <img src="/wp.gif" alt="" />
           </picture>
           <div class="project__about project_about4">
-            <h1 class="project__title">Turkish Sign Language Translator</h1>
+            <h1 class="project__title">WhatsApp Clone</h1>
             <p class="project__desc">
-              aaaaaTurkish Sing Language Translator" can detect hands & signs
-              that means letters and words. <br />
-              The main purpose is to remove barriers of the people with
-              disabilities in communication. <br />
+              Classic WhatsApp clone.<br />
+              You can send message to peoples or groups & delete messages.
             </p>
+            <div class="bar__container">
+              <div class="bar"></div>
+            </div>
+            <p class="project__process">Project Process</p>
+            <div class="github">
+              <a
+                class="github__link"
+                href="https://github.com/samettoprak/whatsapp-clone"
+                target="_blank"
+                >Code
+              </a>
+              <div class="github__img">
+                <img src="github.png" alt="" />
+              </div>
+            </div>
           </div>
           <!-- end of projects -->
         </div>
       </section>
     </main>
-    <!-- <footer></footer> -->
-
+    <footer id="contact" class="container contact section">
+      <h1 class="contact__title">Get In Contact</h1>
+      <div class="contact__links">
+        <a
+          href="https://github.com/samettoprak"
+          target="_blank"
+          class="contact__img"
+          ><img src="/github.png" alt=""
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/samettoprak41/"
+          class="contact__img"
+          target="_blanl"
+          ><img src="/linkedin.png" alt=""
+        /></a>
+        <a
+          href="mailto:topraksamet41@gmail.com"
+          target="_blank"
+          class="contact__img"
+          ><img src="/gmail.png" alt=""
+        /></a>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

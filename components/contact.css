@@ -1,0 +1,23 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact__title {
+  color: var(--clr-slate600);
+  font-size: var(--size-lg);
+}
+.contact__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.contact__img {
+  filter: invert();
+  opacity: 0.8;
+  width: 50px;
+}

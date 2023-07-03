@@ -1,6 +1,8 @@
 .about {
   display: flex;
   flex-direction: column;
+
+  justify-content: space-evenly;
 }
 .about__me {
   padding-left: 0.5rem;
@@ -34,11 +36,6 @@
 .about__list-container {
   display: flex;
 }
-.circle__animation {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-}
 
 /* xs */
 /* @media (min-width: 475px) {
@@ -57,12 +54,6 @@
   .about {
     display: flex;
     flex-direction: row;
-  }
-  .about__me {
-    flex: 1;
-  }
-  .circle__animation {
-    flex: 1;
   }
 }
 
