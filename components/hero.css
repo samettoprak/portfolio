@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  height: calc(100vh - 98px);
+  transition: 1s;
 }
 .hero__img {
   /* display: inline-block; */
@@ -61,7 +62,6 @@
 /* lg */
 @media (min-width: 1024px) {
   .hero {
-    padding-top: 5rem;
   }
   .hero__img {
     width: 12rem;
@@ -82,7 +82,6 @@
 @media (min-width: 1280px) {
   .hero {
     gap: 2rem;
-    padding-top: 6rem;
   }
   .hero__img {
     width: 16rem;
@@ -102,3 +101,9 @@
 /* 2xl */
 /* @media (min-width: 1536px) {
 } */
+
+@media (max-height: 600px) {
+  .hero {
+    height: 600px;
+  }
+}

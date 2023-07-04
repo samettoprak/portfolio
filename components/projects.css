@@ -16,9 +16,11 @@
 
 .project__title {
   color: var(--clr-slate400);
+  font-size: var(--size-lg);
 }
 .project__desc {
   color: var(--clr-slate600);
+  font-size: var(--size-xs);
   padding: 0 1rem;
 }
 .project__img {
@@ -35,6 +37,7 @@
   align-items: center;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
+  margin: 1rem 1rem;
 }
 
 .project_img1 {
@@ -133,12 +136,11 @@
 }
 
 .github {
-  margin-top: 1rem;
+  margin-top: 0.3rem;
   display: flex;
   align-items: center;
   width: 150px;
   justify-content: space-evenly;
-  border-radius: 1rem;
   font-weight: bold;
 }
 .github__img {
@@ -160,12 +162,19 @@
   opacity: 0;
 } */
 /* xs */
-/* @media (min-width: 475px) {
-} */
+@media (min-width: 475px) {
+  .project__title {
+    font-size: var(--size-2xl);
+  }
+  .project__desc {
+    font-size: var(--size-base);
+  }
+}
 
 /* sm */
 @media (min-width: 640px) {
   .project_container {
+    padding-top: 3rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -182,12 +191,30 @@
 
 /* lg */
 @media (min-width: 1024px) {
+  .projects__title {
+    font-size: var(--size-4xl);
+    padding-bottom: 1rem;
+  }
+  .projects__desc {
+    font-size: var(--size-xl);
+  }
+  .project__title {
+    font-size: var(--size-3xl);
+  }
+  .project__desc {
+    font-size: var(--size-xl);
+    margin-top: 0.2rem;
+  }
+  .github {
+    margin-top: 1rem;
+  }
 }
 
 /* xl */
 @media (min-width: 1280px) {
   .project_container {
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 
