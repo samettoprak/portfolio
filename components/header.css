@@ -74,7 +74,7 @@
     align-items: center;
     justify-content: center;
     list-style: none;
-    border: 1px solid red;
+
     gap: 2em;
   }
   .header__link {

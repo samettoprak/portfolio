@@ -60,6 +60,17 @@ body {
   background-color: var(--clr-dark);
   color: var(--clr-light);
 }
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {

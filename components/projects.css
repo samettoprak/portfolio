@@ -21,12 +21,12 @@
   color: var(--clr-slate600);
   padding: 0 1rem;
 }
-
 .project__img {
-  position: relative;
+  aspect-ratio: 1/1;
 }
 .project__img img {
   width: 100%;
+  object-fit: contain;
 }
 .project__about {
   display: flex;
@@ -47,7 +47,10 @@
   grid-area: img3;
 }
 .project_img4 {
+  display: flex;
+
   grid-area: img4;
+  background-color: #1e293b;
 }
 .project_about1 {
   grid-area: abt1;
@@ -183,6 +186,9 @@
 
 /* xl */
 @media (min-width: 1280px) {
+  .project_container {
+    padding: 0 100px;
+  }
 }
 
 /* 2xl */
