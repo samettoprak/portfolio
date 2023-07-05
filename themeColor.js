@@ -9,10 +9,12 @@ projectsTitle = document.querySelector(".projects__title");
 allProjectTitle = document.querySelectorAll(".project__title");
 githubImage = document.querySelectorAll(".github__img");
 contacts = document.querySelectorAll(".contact__img");
+header__hamburger = document.querySelector(".header__hamburger");
 
 document.getElementById("themeBtn").onclick = () => {
   console.log("samet");
   if (darkTheme) {
+    header__hamburger.style.filter = "invert()";
     darkTheme = false;
     document.body.style.background = "white";
     aboutMeTitle.style.color = slate600;
@@ -29,6 +31,7 @@ document.getElementById("themeBtn").onclick = () => {
     });
   } else {
     darkTheme = true;
+    header__hamburger.style.filter = "none";
     document.body.style.background = "var(--clr-dark)";
     aboutMeTitle.style.color = slateLight;
     projectsTitle.style.color = slateLight;

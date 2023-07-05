@@ -6,6 +6,7 @@
 }
 
 .projects__title {
+  margin-bottom: 1rem;
   color: var(--clr-light);
   text-transform: uppercase;
 }
@@ -25,6 +26,18 @@
 }
 .project__img {
   aspect-ratio: 1/1;
+  position: relative;
+}
+.project__img::before {
+  content: "";
+  position: absolute;
+  inset: 0rem;
+  background: var(--clr-slate800);
+  opacity: 0.5;
+  transition: 1s;
+}
+.project__img:hover::before {
+  opacity: 0;
 }
 .project__img img {
   width: 100%;
@@ -103,7 +116,10 @@
   transition: 1s;
   box-shadow: 0 0 10px 1px gray;
   background-color: white;
-  animation: text-animate 5s infinite;
+  opacity: 0;
+}
+.process-animation::before {
+  animation: text-animate 5s;
 }
 .fill-animation {
   animation: process 1s ease-in 1 forwards;
@@ -173,6 +189,10 @@
 
 /* sm */
 @media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
   .project_container {
     padding-top: 3rem;
     display: grid;
@@ -185,10 +205,6 @@
   }
 }
 
-/* md */
-/* @media (min-width: 768px) {
-} */
-
 /* lg */
 @media (min-width: 1024px) {
   .projects__title {
@@ -199,10 +215,11 @@
     font-size: var(--size-xl);
   }
   .project__title {
-    font-size: var(--size-3xl);
+    font-size: var(--size-2xl);
+    margin-bottom: 1rem;
   }
   .project__desc {
-    font-size: var(--size-xl);
+    font-size: var(--size-base);
     margin-top: 0.2rem;
   }
   .github {

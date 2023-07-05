@@ -14,7 +14,7 @@ about__desc2 = document.getElementById("about__desc2");
 about__desc3 = document.getElementById("about__desc3");
 about__techs = document.querySelector(".about__techs");
 projects__title = document.getElementById("projects__title");
-projects__desc = document.querySelector(".projects__desc");
+
 // projects
 project__title1 = document.getElementById("project__title1");
 project__desc1 = document.getElementById("project__desc1");
@@ -36,7 +36,8 @@ turkeyFlag = document.querySelector(".language__img2");
 // ----------------------------------------------------------
 document.getElementById("language__btn").onclick = () => {
   if (languageBool) {
-    document.getElementById("language__btn").style.right = "5px";
+    document.getElementById("language__btn").classList.remove("left");
+    document.getElementById("language__btn").classList.toggle("right");
     languageBool = false;
     // bayrak
     usaFlag.style.filter = "grayscale(100%)";
@@ -58,7 +59,7 @@ document.getElementById("language__btn").onclick = () => {
       "HTML, CSS ve JavaScript konularında yetenekliyim ve React.js gibi popüler frameworkler kullanarak dinamik ve etkileşimli web uygulamaları oluşturuyorum. Heyecan verici fırsatlar için bana gönül rahatlığıyla ulaşabilirsiniz. Teşekkürler.";
     about__techs.innerHTML = "Teknolojiler";
     projects__title.innerHTML = "PROJELER";
-    projects__desc.innerHTML = "bişiler";
+
     // projects
     project__title1.innerHTML = "Türkçe İşaret Dili Çevirmeni";
     project__desc1.innerHTML =
@@ -80,7 +81,8 @@ document.getElementById("language__btn").onclick = () => {
     });
     contact_id.innerHTML = "Bana ulaş / İletişime geç";
   } else {
-    document.getElementById("language__btn").style.right = "30px";
+    document.getElementById("language__btn").classList.remove("right");
+    document.getElementById("language__btn").classList.toggle("left");
     languageBool = true;
     // bayrak
     usaFlag.style.filter = "grayscale(0%)";
@@ -102,8 +104,7 @@ document.getElementById("language__btn").onclick = () => {
       "Skilled in HTML, CSS, and JavaScript, I create dynamic and interactive web applications using popular frameworks like React.js. Feel free to reach out to me for exciting opportunities. Thank you.";
     about__techs.innerHTML = "Technologies";
     projects__title.innerHTML = "PROJECTS";
-    projects__desc.innerHTML =
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis atque magnam quia accusamus totam enim architecto soluta. At, ut animi.";
+
     // projects
     project__title1.innerHTML = "Turkish Sign Language Translator";
     project__desc1.innerHTML =

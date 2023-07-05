@@ -15,22 +15,44 @@
   border-radius: 10px;
   background-color: orange;
   display: flex;
-  padding: 0 5px;
   align-items: center;
-  transition: 1s;
-  box-shadow: inset 0 0 5px black;
+  transition: 1s linear;
+  box-shadow: inset -3px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .language__btn {
   position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+
+  transition: 1s;
+
+  /* right: 5px; */
+}
+.language__btn::before {
+  content: "";
+  position: absolute;
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: black;
-  transition: 1s;
-  right: 30px;
-  /* right: 5px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 15px;
+  background-color: var(--clr-slate600);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+
+  transition: left 1s;
+  /* left: 35px; */
 }
+.right::before {
+  left: 35px;
+}
+.left::before {
+  left: 15px;
+}
+
 .language__img1 {
   width: 25px;
   margin: 0 5px;
