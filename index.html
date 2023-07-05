@@ -14,12 +14,22 @@
   </head>
   <body>
     <header class="header container">
+      <div class="language__switch">
+        <img class="language__img1" src="/usa.png" alt="" />
+        <div class="language">
+          <button id="language__btn" class="language__btn"></button>
+        </div>
+        <img class="language__img2" src="/turkey.png" alt="" />
+      </div>
+
       <nav>
         <ul class="header__menu">
-          <li><a class="header__link" href="#home">Home</a></li>
-          <li><a class="header__link" href="#about">About</a></li>
-          <li><a class="header__link" href="#projects">Projects</a></li>
-          <li><a class="header__link" href="#contact">Contact</a></li>
+          <li><a id="li1" class="header__link" href="#home">Home</a></li>
+          <li><a id="li2" class="header__link" href="#about">About</a></li>
+          <li>
+            <a id="li3" class="header__link" href="#projects">Projects</a>
+          </li>
+          <li><a id="li4" class="header__link" href="#contact">Contact</a></li>
           <li class="header__line"></li>
           <li class="header__sun-li">
             <button id="themeBtn" class="header__sun">
@@ -34,7 +44,7 @@
               </svg>
             </button>
           </li>
-          <li><a class="header__resume btn" href="#">Resume</a></li>
+          <li><a id="li5" class="header__resume btn" href="#">Resume</a></li>
         </ul>
         <button class="header__hamburger" id="hamburgerBtn">
           <svg
@@ -66,17 +76,17 @@
       <section id="about" class="about container section">
         <div class="about__me">
           <h2 class="about__title" id="aboutme_title">About Me</h2>
-          <p class="about__desc">
+          <p id="about__desc1" class="about__desc">
             Hello, I'm Samet Toprak, a 22 year old Front-End Web Developer who
             recently graduated from Trakya University.
           </p>
 
-          <p class="about__desc">
+          <p id="about__desc2" class="about__desc">
             I have a strong background in front-end web development, with a
             focus on design and user experience.
           </p>
 
-          <p class="about__desc">
+          <p id="about__desc3" class="about__desc">
             Skilled in HTML, CSS, and JavaScript, I create dynamic and
             interactive web applications using popular frameworks like React.js.
             Feel free to reach out to me for exciting opportunities. Thank you.
@@ -122,9 +132,12 @@
             <img src="/tsl1.png" alt="" />
           </picture>
           <div class="project__about project_about1">
-            <h1 class="project__title">Turkish Sign Language Translator</h1>
-            <p class="project__desc">
-              Turkish Sing Language Translator" can detect hands & signs that
+            <h1 id="project__title1" class="project__title">
+              Turkish Sign Language Translator
+            </h1>
+
+            <p id="project__desc1" class="project__desc">
+              "Turkish Sing Language Translator" can detect hands & signs that
               means letters and words. <br />
               The main purpose is to remove barriers of the people with
               disabilities in communication. <br />
@@ -152,8 +165,8 @@
             <img src="/esinav.png" alt="" />
           </picture>
           <div class="project__about project_about2">
-            <h1 class="project__title">Online Quiz App</h1>
-            <p class="project__desc">
+            <h1 id="project__title2" class="project__title">Online Quiz App</h1>
+            <p id="project__desc2" class="project__desc">
               This web app offers an interactive learning experience designed
               for both students and teachers. <br />
               Teachers can create quizzes, set deadlines, and track the grades
@@ -182,8 +195,8 @@
             <img src="/netflix.gif" alt="" />
           </picture>
           <div class="project__about project_about3">
-            <h1 class="project__title">Netflix Clone</h1>
-            <p class="project__desc">
+            <h1 id="project__title3" class="project__title">Netflix Clone</h1>
+            <p id="project__desc3" class="project__desc">
               Classic Netflix clone. <br />
               Integrated authentication functionality with Firebase, allowing
               users to create accounts, sign in, and personalize their content.
@@ -211,8 +224,8 @@
             <img class="" src="wp.gif" alt="" />
           </picture>
           <div class="project__about project_about4">
-            <h1 class="project__title">WhatsApp Clone</h1>
-            <p class="project__desc">
+            <h1 id="project__title4" class="project__title">WhatsApp Clone</h1>
+            <p id="project__desc4" class="project__desc">
               Classic WhatsApp clone.<br />
               You can send message to peoples or groups & delete messages.<br />
               Programmed with ReactJS
@@ -238,13 +251,15 @@
             <img class="" src="whatsapp-rest-api.png" alt="" />
           </picture>
           <div class="project__about project_about5">
-            <h1 class="project__title">WhatsApp REST API</h1>
-            <p class="project__desc">
+            <h1 id="project__title5" class="project__title">
+              WhatsApp REST API
+            </h1>
+            <p id="project__desc5" class="project__desc">
               REST API for WhatsApp backend.<br />
               The API supports basic functionalities such as sending messages,
               managing groups, and user administration. It exchanges data in
-              JSON format and makes calls over the HTTP protocol.Programmed with
-              <strong>Java</strong>
+              JSON format and makes calls over the HTTP protocol.<br />
+              Programmed with Java.
             </p>
             <div class="bar__container">
               <div class="bar"></div>
@@ -268,7 +283,7 @@
       </section>
     </main>
     <footer id="contact" class="container contact section">
-      <h1 class="contact__title">Get In Contact</h1>
+      <h1 id="contact_id" class="contact__title">Get In Contact</h1>
       <div class="contact__links">
         <a
           href="https://github.com/samettoprak"
@@ -294,5 +309,6 @@
     <script type="module" src="/main.js"></script>
     <script src="/themeColor.js"></script>
     <script src="/hamburger.js"></script>
+    <script src="/languageSwitch.js"></script>
   </body>
 </html>
