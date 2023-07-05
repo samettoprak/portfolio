@@ -49,7 +49,7 @@ document.getElementById("language__btn").onclick = () => {
     li2.innerHTML = "Hakkımda";
     li3.innerHTML = "Projeler";
     li4.innerHTML = "İletişim";
-    li5.innerHTML = "değiştir";
+    li5.innerHTML = "CV'yi görüntüle";
     hero__hi.innerHTML = "Merhaba! Ben Samet.";
     hero__description.innerHTML =
       "<strong> Portfolyo </strong> web sayfama hoşgeldin.";
@@ -98,7 +98,7 @@ document.getElementById("language__btn").onclick = () => {
     li2.innerHTML = "About";
     li3.innerHTML = "Projects";
     li4.innerHTML = "Contact";
-    li5.innerHTML = "Resume";
+    li5.innerHTML = "View CV";
     hero__hi.innerHTML = "Hi! I'm Samet.";
     hero__description.innerHTML =
       "Welcome to my <strong> portfolio </strong> web page.";

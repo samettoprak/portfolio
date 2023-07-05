@@ -10,3 +10,18 @@ const observer = new IntersectionObserver((entries) => {
 progressBar.forEach((progress) => {
   observer.observe(progress);
 });
+
+var text = document.querySelector(".text");
+
+const textLoad = () => {
+  setTimeout(() => {
+    text.textContent = "WEB DEVELOPER";
+  }, 0);
+  setTimeout(() => {
+    text.innerHTML = "MOBILE DEVELOPER";
+  }, 2000);
+  setTimeout(() => {
+    text.textContent = "WEB & MOBILE DEV";
+  }, 6000);
+};
+textLoad();
