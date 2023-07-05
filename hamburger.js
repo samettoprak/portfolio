@@ -3,10 +3,13 @@ let element = document.querySelector(".header__menu");
 let element2 = document.querySelector(".header");
 document.getElementById("hamburgerBtn").onclick = () => {
   if (navBool) {
+    element.style.transition = "1s";
     element.style.transform = "translateY(0)";
     element2.style.height = "266px";
     navBool = !navBool;
   } else {
+    element.style.transition = "1s";
+
     element.style.transform = "translateY(-200px)";
     element2.style.height = "4rem";
 
@@ -20,11 +23,13 @@ window.addEventListener("resize", function () {
     sizeBool = true;
     element2.style.height = "50px";
     element.style.transform = "translateY(0)";
+    element.style.transition = "0s";
 
     // Diğer stil değişikliklerini burada yapabilirsiniz
   } else if ((this.window.innerWidth < 768) & sizeBool) {
     sizeBool = false;
     element.style.transform = "translateY(-200px)";
     element2.style.height = "4rem";
+    element.style.transition = "0s";
   }
 });

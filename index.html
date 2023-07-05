@@ -22,7 +22,7 @@
           <li><a class="header__link" href="#contact">Contact</a></li>
           <li class="header__line"></li>
           <li class="header__sun-li">
-            <button class="header__sun">
+            <button id="themeBtn" class="header__sun">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -65,7 +65,7 @@
       </section>
       <section id="about" class="about container section">
         <div class="about__me">
-          <h2 class="about__title">About Me</h2>
+          <h2 class="about__title" id="aboutme_title">About Me</h2>
           <p class="about__desc">
             Hello, I'm Samet Toprak, a 22 year old Front-End Web Developer who
             recently graduated from Trakya University.
@@ -108,7 +108,7 @@
       </section>
       <!-- projects section -->
       <section id="projects" class="projects section container">
-        <h1 class="projects__title">Projects</h1>
+        <h1 class="projects__title" id="projects__title">Projects</h1>
         <p class="projects__desc">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
           atque magnam quia accusamus totam enim architecto soluta. At, ut
@@ -243,8 +243,7 @@
               REST API for WhatsApp backend.<br />
               The API supports basic functionalities such as sending messages,
               managing groups, and user administration. It exchanges data in
-              JSON format and makes calls over the HTTP protocol. To use the
-              API, a developer account and an API key are required.
+              JSON format and makes calls over the HTTP protocol.
             </p>
             <div class="bar__container">
               <div class="bar"></div>
@@ -292,6 +291,7 @@
     </footer>
 
     <script type="module" src="/main.js"></script>
+    <script src="/themeColor.js"></script>
     <script src="/hamburger.js"></script>
   </body>
 </html>
