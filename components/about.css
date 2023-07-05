@@ -60,6 +60,12 @@
   .about__me {
     margin: 0;
   }
+  .about__desc {
+    font-size: var(--size-xl);
+  }
+  .about__list {
+    font-size: var(--size-base);
+  }
 }
 
 /* xl */

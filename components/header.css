@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 8rem;
 }
 
 .language {
@@ -112,6 +112,10 @@
   color: var(--clr-slate600);
   width: var(--size-base);
   height: var(--size-base);
+  transition: color 1s;
+}
+.header__sun:hover {
+  color: orange;
 }
 .header__resume {
   text-decoration: none;

@@ -27,6 +27,8 @@
 .project__img {
   aspect-ratio: 1/1;
   position: relative;
+
+  object-fit: contain;
 }
 .project__img::before {
   content: "";
@@ -64,9 +66,22 @@
 }
 .project_img4 {
   display: flex;
-
   grid-area: img4;
   background-color: #1e293b;
+}
+.project__img5 {
+  grid-area: img5;
+}
+.project__img6 {
+  grid-area: img6;
+}
+.imgContainer img {
+  width: 100%;
+  height: 100%;
+  background-color: #1e293b;
+}
+.imgContainer {
+  aspect-ratio: 1/1;
 }
 .project_about1 {
   grid-area: abt1;
@@ -79,6 +94,12 @@
 }
 .project_about4 {
   grid-area: abt4;
+}
+.project_about5 {
+  grid-area: abt5;
+}
+.project_about6 {
+  grid-area: abt6;
 }
 
 .bar__container {
@@ -93,13 +114,25 @@
 }
 
 .bar {
-  width: 100%;
   height: 100%;
   background: linear-gradient(45deg, yellow, orange, orange, red);
   position: absolute;
   border-radius: 1rem;
   opacity: 0;
 }
+.bar1,
+.bar2,
+.bar3,
+.bar5 {
+  width: 100%;
+}
+.bar4 {
+  width: 70%;
+}
+.bar6 {
+  width: 30%;
+}
+
 .project__process {
   color: var(--clr-slate600);
   position: relative;
@@ -201,7 +234,9 @@
       "img1 abt1"
       "abt2 img2"
       "img3 abt3"
-      "abt4 img4";
+      "abt4 img4"
+      "img5 abt5"
+      "abt6 img6";
   }
 }
 
@@ -219,7 +254,7 @@
     margin-bottom: 1rem;
   }
   .project__desc {
-    font-size: var(--size-base);
+    font-size: var(--size-lg);
     margin-top: 0.2rem;
   }
   .github {
