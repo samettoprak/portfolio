@@ -15,13 +15,13 @@ var text = document.querySelector(".text");
 
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = "WEB DEVELOPER";
+    text.textContent = "DEVELOPER";
   }, 0);
   setTimeout(() => {
     text.innerHTML = "MOBILE DEVELOPER";
   }, 2000);
   setTimeout(() => {
-    text.textContent = "WEB & MOBILE DEV";
+    text.textContent = "WEB DEVELOPER";
   }, 6000);
 };
 textLoad();

@@ -11,8 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <script src="app.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
   </head>
-  <body>
+  <body style="visibility: hidden">
     <header class="header container">
       <!-- Language Switch -->
       <div class="language__switch">
@@ -133,7 +134,7 @@
           <!-- proje1 -->
           <!-- <h1 class="project__title">Turkish Sign Language Translator</h1> -->
           <picture class="project__img project_img1">
-            <img src="/tsl1.png" alt="" />
+            <img loading="lazy" src="/tsl1.png" alt="" />
           </picture>
           <div class="project__about project_about1">
             <h1 id="project__title1" class="project__title">
@@ -167,7 +168,7 @@
           </div>
           <!-- proje2 -->
           <picture class="project__img project_img2">
-            <img src="/esinav.png" alt="" />
+            <img loading="lazy" src="/esinav.png" alt="" />
           </picture>
           <div class="project__about project_about2">
             <h1 id="project__title2" class="project__title">Online Quiz App</h1>
@@ -197,7 +198,7 @@
           </div>
           <!-- proje3 -->
           <picture class="project__img project_img3">
-            <img src="/netflix.gif" alt="" />
+            <img loading="lazy" src="/netflix.gif" alt="" />
           </picture>
           <div class="project__about project_about3">
             <h1 id="project__title3" class="project__title">Netflix Clone</h1>
@@ -227,7 +228,7 @@
           </div>
           <!-- proje4 -->
           <picture class="project__img project_img4">
-            <img class="" src="wp.gif" alt="" />
+            <img loading="lazy" class="" src="wp.gif" alt="" />
           </picture>
           <div class="project__about project_about4">
             <h1 id="project__title4" class="project__title">WhatsApp Clone</h1>
@@ -255,7 +256,7 @@
           </div>
           <!-- proje5 -->
           <picture class="project__img project_img5">
-            <img class="" src="whatsapp-rest-api.png" alt="" />
+            <img loading="lazy" class="" src="whatsapp-rest-api.png" alt="" />
           </picture>
           <div class="project__about project_about5">
             <h1 id="project__title5" class="project__title">
@@ -288,7 +289,7 @@
           <!-- project 6 -->
           <picture class="project__img project_img6">
             <div class="imgContainer">
-              <img class="" src="ecommerce.gif" alt="" />
+              <img loading="lazy" class="" src="ecommerce.gif" alt="" />
             </div>
           </picture>
           <div class="project__about project_about6">
@@ -347,10 +348,23 @@
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
     <script src="/themeColor.js"></script>
     <script src="/hamburger.js"></script>
     <script src="/languageSwitch.js"></script>
     <script src="/processObserver.js"></script>
+    <script>
+      // for FOUC
+      let domReady = (cb) => {
+        document.readyState === "interactive" ||
+        document.readyState === "complete"
+          ? cb()
+          : document.addEventListener("DOMContentLoaded", cb);
+      };
+
+      domReady(() => {
+        // Display body when DOM is loaded
+        document.body.style.visibility = "visible";
+      });
+    </script>
   </body>
 </html>
