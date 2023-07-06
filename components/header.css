@@ -17,6 +17,7 @@
   align-items: center;
   transition: 1s linear;
   box-shadow: inset -3px 2px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid #80808050;
 }
 
 .language__btn {
@@ -24,7 +25,6 @@
   width: 50px;
   height: 20px;
   border-radius: 10px;
-
   transition: 1s;
 
   /* right: 5px; */
@@ -40,7 +40,7 @@
   transform: translate(-50%, -50%);
   left: 15px;
   background-color: var(--clr-slate600);
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 1);
 
   transition: left 1s;
   /* left: 35px; */
