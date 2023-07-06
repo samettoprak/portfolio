@@ -5,13 +5,10 @@
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
     />
-
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <script src="app.js" defer></script>
-    <script type="module" src="/main.js" defer></script>
   </head>
   <body style="visibility: hidden">
     <header class="header container">
@@ -348,10 +345,6 @@
       </div>
     </footer>
 
-    <script src="/themeColor.js"></script>
-    <script src="/hamburger.js"></script>
-    <script src="/languageSwitch.js"></script>
-    <script src="/processObserver.js"></script>
     <script>
       // for FOUC
       let domReady = (cb) => {
@@ -377,5 +370,6 @@
         document.body.style.visibility = "visible";
       });
     </script>
+    <script src="./src/main.js" type="module"></script>
   </body>
 </html>

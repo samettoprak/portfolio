@@ -98,8 +98,6 @@
 
 /* lg */
 @media (min-width: 1024px) {
-  .hero {
-  }
   .hero__img {
     width: 12rem;
     height: 12rem;
