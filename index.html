@@ -367,6 +367,13 @@
         if (theme) {
           document.getElementById("themeBtn").click();
         }
+        if (window.innerWidth < 768) {
+          let element = document.querySelector(".header__menu");
+          let element2 = document.querySelector(".header");
+          element.style.transform = "translateY(-200px)";
+          element2.style.height = "4rem";
+          element.style.transition = "0s";
+        }
         document.body.style.visibility = "visible";
       });
     </script>
