@@ -363,6 +363,10 @@
 
       domReady(() => {
         // Display body when DOM is loaded
+        const theme = localStorage.getItem("theme");
+        if (theme) {
+          document.getElementById("themeBtn").click();
+        }
         document.body.style.visibility = "visible";
       });
     </script>

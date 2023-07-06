@@ -44,11 +44,11 @@
   left: 100%;
   height: 100%;
   width: 100%;
-  background-color: var(--clr-dark);
+  background-color: var(--afterColor, #070a13);
   border-left: 2px solid var(--clr-slate400);
   animation: typing 4s steps(13) 3;
 }
-.hometext_animate::before {
+.text .hometext_animate::before {
   opacity: 0;
 }
 @keyframes cursor {
