@@ -53,7 +53,7 @@ const languageSwitch = () => {
       li5.innerHTML = "CV'yi görüntüle";
       hero__hi.innerHTML = "Merhaba! Ben Samet.";
       hero__description.innerHTML =
-        "<strong> Portfolyo </strong> web sayfama hoşgeldin.";
+        "<strong> Portfolyo </strong> web siteme hoşgeldin.";
       about__title.innerHTML = "Hakkımda";
       about__desc1.innerHTML =
         "Selam, Ben Samet Toprak. Trakya Üniversitesi'nden yeni mezun olmuş, 22 yaşında bir <strong> Front-End Web </strong> geliştiricisiyim.";
@@ -67,7 +67,7 @@ const languageSwitch = () => {
       // projects
       project__title1.innerHTML = "Türkçe İşaret Dili Çevirmeni";
       project__desc1.innerHTML =
-        "Türkçe işaret dili çevirmeni harf ve kelime anlamına gelen el ile yapılan işaretleri algılayabilir. <br/> Projenin amacı engelleri olan insanları iletişimdeki bariyerlerini kaldırmaktır.<br/> Python ile programlandı.";
+        "Türkçe işaret dili çevirmeni harf ve kelime anlamına gelen el ile yapılan işaretleri algılayabilir. <br/> Projenin amacı engelleri olan insanların iletişimdeki bariyerlerini kaldırmaktır.<br/> Python ile programlandı.";
       project__title2.innerHTML = "Çevrimiçi Sınav Uygulaması";
       project__desc2.innerHTML =
         "Bu Web uygulaması, hem öğrenciler hem de öğretmenler için tasarlanmış etkileşimli bir öğrenme deneyimi sunar.<br/> Öğretmenler bu uygulama üzerinden sınavlar oluşturabilir, sınavın başlayış ve bitiş zamanını belirleyebilir ve öğrencilerin notlarını takip edebilirler. Öte yandan, öğrenciler bu uygulama aracılığıyla sınavlara girebilir ve kendi notlarını görüntüleyebilirler.<br/> ReactJS ile programlandı.";
