@@ -43,7 +43,15 @@
               </svg>
             </button>
           </li>
-          <li><a id="li5" class="header__resume btn" href="#">View CV</a></li>
+          <li>
+            <a
+              id="li5"
+              class="header__resume btn"
+              href="#"
+              onclick="downloadCV()"
+              >View CV</a
+            >
+          </li>
         </ul>
         <button class="header__hamburger" id="hamburgerBtn">
           <svg
@@ -371,5 +379,13 @@
       });
     </script>
     <script src="./src/main.js" type="module"></script>
+    <script>
+      function downloadCV() {
+        var link = document.createElement("a");
+        link.href = "/samet-toprak-cv.pdf";
+        link.download = "cv.pdf";
+        link.click();
+      }
+    </script>
   </body>
 </html>
