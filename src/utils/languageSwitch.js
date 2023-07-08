@@ -13,6 +13,7 @@ const languageSwitch = () => {
   const about__desc1 = document.getElementById("about__desc1");
   const about__desc2 = document.getElementById("about__desc2");
   const about__desc3 = document.getElementById("about__desc3");
+  const about__desc4 = document.getElementById("about__desc4");
   const about__techs = document.querySelector(".about__techs");
   const projects__title = document.getElementById("projects__title");
 
@@ -56,11 +57,13 @@ const languageSwitch = () => {
         "<strong> Portfolyo </strong> web siteme hoşgeldin.";
       about__title.innerHTML = "Hakkımda";
       about__desc1.innerHTML =
-        "Selam, Ben Samet Toprak. Trakya Üniversitesi'nden yeni mezun olmuş, 22 yaşında bir <strong> Front-End Web </strong> geliştiricisiyim.";
+        "Selam, Ben Samet Toprak. Trakya Üniversitesi'nden yeni mezun olmuş, 22 yaşında bir <strong>yazılımcıyım</strong>. ";
       about__desc2.innerHTML =
-        "Tasarım ve kullanıcı deneyimi odaklı olarak, Front-End Web geliştirme konusunda sağlam bir arkaplana sahibim.";
+        "Tasarım ve kullanıcı deneyimi odaklı olarak, Front-End geliştirme konusunda sağlam bir arkaplana sahibim.";
       about__desc3.innerHTML =
-        "<strong> HTML</strong> , <strong>CSS </strong>  ve <strong>JavaScript </strong>  konularında yetenekliyim ve <strong>ReactJS</strong>  gibi popüler frameworkler kullanarak dinamik ve etkileşimli web uygulamaları oluşturuyorum. Heyecan verici fırsatlar için bana gönül rahatlığıyla ulaşabilirsiniz. Teşekkürler.";
+        "<strong> HTML</strong> , <strong>CSS </strong>  ve <strong>JavaScript </strong>  konularında yetenekliyim ve <strong>ReactJS</strong>  gibi popüler frameworkler kullanarak dinamik ve etkileşimli web uygulamaları oluşturuyorum.";
+      about__desc4.innerHTML =
+        "Ayrıca <strong>Back End</strong> projeleri için <strong>Java</strong> & <strong>Spring Boot</strong> ile de çalıştım.  Heyecan verici fırsatlar için bana gönül rahatlığıyla ulaşabilirsiniz. Teşekkürler.";
       about__techs.innerHTML = "Teknolojiler";
       projects__title.innerHTML = "PROJELER";
 
@@ -105,11 +108,14 @@ const languageSwitch = () => {
         "Welcome to my <strong> portfolio </strong> web page.";
       about__title.innerHTML = "About Me";
       about__desc1.innerHTML =
-        "Hello, I'm Samet Toprak, a 22 year old <strong> Front-End Web</strong> Developer who recently graduated from Trakya University.";
+        "Hello, I'm Samet Toprak, a 22 year old <strong> Software </strong> Developer who recently graduated from Trakya University.";
       about__desc2.innerHTML =
-        "I have a strong background in front-end web development, with a focus on design and user experience.";
+        "I have a strong background in front-end development, with a focus on design and user experience.";
       about__desc3.innerHTML =
-        "Skilled in <strong>HTML</strong> ,<strong>CSS</strong> , and <strong>JavaScript</strong> , I create dynamic and interactive web applications using popular frameworks like <strong>ReactJS</strong> . Feel free to reach out to me for exciting opportunities. Thank you.";
+        "Skilled in <strong>HTML</strong> ,<strong>CSS</strong> , and <strong>JavaScript</strong> , I create dynamic and interactive web applications using popular frameworks like <strong>ReactJS</strong>.";
+
+      about__desc4.innerHTML =
+        "I also worked on <strong>Back End</strong> projects with <strong> Java</strong> & <strong>Spring Boot</strong>. Feel free to reach out to me for exciting opportunities. Thank you.";
       about__techs.innerHTML = "Technologies";
       projects__title.innerHTML = "PROJECTS";
 
