@@ -44,11 +44,7 @@
             </button>
           </li>
           <li>
-            <a
-              id="li5"
-              class="header__resume btn"
-              href="#"
-              onclick="downloadCV()"
+            <a id="li5" class="header__resume btn" href="#" onclick="viewCV()"
               >View CV</a
             >
           </li>
@@ -384,11 +380,8 @@
     </script>
     <script src="./src/main.js" type="module"></script>
     <script>
-      function downloadCV() {
-        var link = document.createElement("a");
-        link.href = "/samet-toprak-cv.pdf";
-        link.download = "cv.pdf";
-        link.click();
+      function viewCV() {
+        window.open("/samet-toprak-cv.pdf", "_blank");
       }
     </script>
   </body>
